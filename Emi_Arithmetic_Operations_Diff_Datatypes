@@ -1,8 +1,52 @@
-⊰⁠⊹ I’m @nowehmee, just call me Emi for short.
+using System;
 
-⊰⁠⊹ First year Computer Science Student 
+namespace Emi_OverloadingMethods;
 
-⊰⁠⊹ I’m interested in arts but pursuing a degree in computer field, lol.
-
-⊰⁠⊹ Currently in the process of learning C#.
-
+class Operations
+// overloading methods na siya, pwedeng same method name
+// ibahin lang yung sa parameters, and return type
+{
+	public static void Main()
+	{
+		Console.WriteLine("Add Int    : " + Add(1,2));
+		Console.WriteLine("Add Double : " + Add(3.95,4.45));
+		Console.WriteLine("Sub Int    : " + Sub(1,2));
+		Console.WriteLine("Sub Double : " + Sub(3.95,4.45));
+		Console.WriteLine("Mul Int    : " + Mul(1,2));
+		Console.WriteLine("Mul Double : " + Mul(3.95,4.45));
+		Console.WriteLine("Div Int    : " + Div(1,2));
+		Console.WriteLine("Div Double : " + Div(3.95,4.45));
+	}
+	static int Add(int num1, int num2)
+	{			
+		return num1 + num2;
+	}
+	static double Add(double num1, double num2)
+	{
+		return num1 + num2;
+	}
+	static int Sub(int num1, int num2)
+	{			
+		return num1 - num2;
+	}
+	static double Sub(double num1, double num2)
+	{			
+		return num1 - num2;
+	}
+	static int Div(int num1, int num2)
+	{			
+		return num1 / num2;
+	}
+	static double Div(double num1, double num2)
+	{			
+		return num1 / num2;
+	}
+	static int Mul(int num1, int num2)
+	{			
+		return num1 * num2;
+	}
+	static double Mul(double num1, double num2)
+	{			
+		return num1 * num2;
+	}
+}
